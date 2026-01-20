@@ -1,0 +1,19 @@
+[package]
+name = "lpc176x5x-hal"
+version = "0.1.0"
+edition = "2024"
+authors = ["Marshall Hunt <marshallhunt@live.com>"]
+description = "Hardware Abstraction Layer for the NXP LPC176x5x series microcontrollers."
+license = "MIT"
+repository = "https://github.com/MarshTheBacca/lpc176x5x-hal"
+keywords = ["arm", "cortex-m", "lpc176x5x", "hal", "embedded"]
+categories = ["embedded", "no-std"]
+readme = "README.md"
+include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE"]
+
+
+[dependencies]
+lpc176x5x-pac = "0.1.1"
+embedded-hal = "1.0.0"
+cortex-m = "0.7.7"
+nb = "1.1.0"
