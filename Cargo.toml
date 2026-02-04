@@ -11,9 +11,10 @@ categories = ["embedded", "no-std"]
 readme = "README.md"
 include = ["src/**/*.rs", "Cargo.toml", "README.md", "LICENSE"]
 
-
 [dependencies]
-lpc176x5x-pac = "0.1.1"
+lpc176x5x-pac = { version = "0.1.1", features = ["critical-section"] }
 embedded-hal = "1.0.0"
-cortex-m = "0.7.7"
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+cortex-m-rt = "0.7.5"
+panic-halt = "1.0.0"
 nb = "1.1.0"
